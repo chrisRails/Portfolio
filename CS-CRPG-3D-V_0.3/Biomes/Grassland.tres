@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Tiles/Biome.gd" type="Script" id=1]
+[ext_resource path="res://Biomes/Terrain/Grassland_Urban.tres" type="Resource" id=2]
+[ext_resource path="res://Biomes/Roads/Grassland_Road.tres" type="Resource" id=3]
+[ext_resource path="res://Biomes/Terrain/Grassland_Plain.tres" type="Resource" id=4]
+[ext_resource path="res://Biomes/Terrain/Grassland_Border.tres" type="Resource" id=5]
+[ext_resource path="res://Biomes/Terrain/Blank.tres" type="Resource" id=6]
+
+[resource]
+script = ExtResource( 1 )
+name = "Grassland"
+road = ExtResource( 3 )
+Plains = ExtResource( 4 )
+Urban = ExtResource( 2 )
+Fast_Travel_Zone = ExtResource( 5 )
+Blank = ExtResource( 6 )

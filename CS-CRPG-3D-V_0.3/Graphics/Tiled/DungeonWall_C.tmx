@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="12" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="12" height="6">
+  <data encoding="csv">
+705,705,705,705,701,705,701,705,702,705,702,705,
+756,756,756,756,752,756,752,756,753,756,753,756,
+807,807,807,807,803,807,803,807,804,807,804,807,
+712,290,290,711,703,705,703,705,708,709,709,710,
+763,290,290,762,754,756,754,756,810,811,811,812,
+814,290,290,813,805,807,805,807,861,533,533,863
+</data>
+ </layer>
+</map>

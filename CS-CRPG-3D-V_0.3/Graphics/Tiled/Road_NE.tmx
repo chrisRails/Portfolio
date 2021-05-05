@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="Basic-Terrain.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="10" height="10">
+  <data encoding="csv">
+45,88,42,106,281,293,111,42,128,45,
+82,132,44,106,277,238,111,44,84,98,
+44,42,42,106,237,101,103,112,43,88,
+42,42,43,106,101,101,237,103,104,104,
+45,96,42,114,105,290,280,284,237,238,
+42,42,42,130,114,105,101,237,238,278,
+42,42,43,42,42,114,113,113,113,113,
+137,42,42,43,44,42,42,82,42,43,
+42,44,42,89,45,83,42,45,42,134,
+43,119,42,45,46,45,45,44,42,45
+</data>
+ </layer>
+</map>

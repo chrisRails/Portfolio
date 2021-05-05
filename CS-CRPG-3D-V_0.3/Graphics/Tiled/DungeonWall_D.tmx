@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="12" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="ruindungeons_sheet_full.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="12" height="8">
+  <data encoding="csv">
+446,446,446,446,451,446,451,446,450,446,450,446,
+495,495,495,495,500,495,500,495,499,495,499,495,
+444,692,692,443,452,453,453,454,456,457,457,458,
+493,692,692,492,501,502,502,503,505,506,506,507,
+449,446,449,446,456,459,459,458,456,460,460,458,
+498,495,498,495,505,508,508,507,505,506,506,507,
+447,448,463,446,446,462,447,448,464,465,465,466,
+496,497,512,495,495,511,496,497,513,514,514,515
+</data>
+ </layer>
+</map>

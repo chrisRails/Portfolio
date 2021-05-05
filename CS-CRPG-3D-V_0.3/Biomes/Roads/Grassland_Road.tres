@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Tiles/Road.gd" type="Script" id=1]
+[ext_resource path="res://Models/Details/Road_3Way.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/Details/Road_4Way.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Models/Details/Road_Straight.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Models/Details/Road_Turn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Models/Details/Road_End.tscn" type="PackedScene" id=6]
+
+[resource]
+script = ExtResource( 1 )
+name = "Road"
+Straight = ExtResource( 4 )
+Turn = ExtResource( 5 )
+End = ExtResource( 6 )
+Way3 = ExtResource( 2 )
+Way4 = ExtResource( 3 )

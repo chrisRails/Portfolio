@@ -1,0 +1,95 @@
+{
+	"sheets": [
+		{
+			"name": "Abilities",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "Name",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "IconNum",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "Description",
+					"display": null
+				},
+				{
+					"typeStr": "0",
+					"name": "ID",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"Name": "Electricity",
+					"IconNum": 156,
+					"Description": "Powerful Electric Energy ",
+					"ID": "_electricity_01"
+				},
+				{
+					"Name": "Water",
+					"IconNum": 148,
+					"Description": "Cool and Quick Water",
+					"ID": "_water_01"
+				},
+				{
+					"Name": "Air",
+					"IconNum": 162,
+					"Description": "Free and Moving Air",
+					"ID": "_air_01"
+				},
+				{
+					"Name": "Fire",
+					"IconNum": 144,
+					"Description": "Hot Burning Fire",
+					"ID": "_fire_01"
+				},
+				{
+					"Name": "Earth",
+					"IconNum": 172,
+					"Description": "Strong Steady Earth",
+					"ID": "_earth_01"
+				},
+				{
+					"Name": "Ice",
+					"IconNum": 154,
+					"Description": "Cold and Freezing Ice",
+					"ID": "_ice_01"
+				},
+				{
+					"Name": "Light",
+					"IconNum": 130,
+					"Description": "Briliant and Bright Light",
+					"ID": "_light_01"
+				},
+				{
+					"Name": "Nature",
+					"IconNum": 166,
+					"Description": "Green and Vibrent Nature",
+					"ID": "_nature_01"
+				},
+				{
+					"Name": "Void",
+					"IconNum": 135,
+					"Description": "Null Nothing Void",
+					"ID": "_void_01"
+				},
+				{
+					"Name": "Shield",
+					"IconNum": 202,
+					"Description": "Defensive Shield",
+					"ID": "_sheild_01"
+				}
+			],
+			"separators": [],
+			"props": {}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

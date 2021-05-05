@@ -1,0 +1,23 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Graphics/individual_16x16/icon626.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Items/Armor.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+name = "Leather Chest"
+type = "armor"
+icon = 626
+icon_I = ExtResource( 1 )
+value = 100
+weight = 10
+desc = "Armor made of leather"
+known = true
+count = 1
+EffectList = [  ]
+equiped = false
+ID = "Leather Chest"
+ACBonus = 2
+damageRes = 2
+subType = "Body"
+material = "Leather"

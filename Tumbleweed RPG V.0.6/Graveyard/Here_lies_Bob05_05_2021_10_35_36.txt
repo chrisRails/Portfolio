@@ -1,0 +1,18 @@
+Here lies Bob
+Time of Death 05_05_2021_10_35_36
+Here are your character's stats.
+Bob
+Gold: 4
+Attack: 15
+Health: -13.5
+Stealth: 5
+Speed: 7
+Healing: 8
+Strength: 9
+Weapon: Revolver 1  
+Armor: 
+Attack item: 
+Stealth item: 
+Strength item: 
+Speed item: 
+Healing Item: 

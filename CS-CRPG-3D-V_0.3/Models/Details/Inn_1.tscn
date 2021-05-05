@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/Door.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/Interiors/Inn_Interior.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/Inn_1.tscn" type="PackedScene" id=3]
+
+[node name="Inn_1" instance=ExtResource( 3 )]
+
+[node name="Door" parent="." index="2" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.483778, -0.152235, 4.82139 )
+
+[node name="StaticBody" parent="Door/Sprite3D" index="0"]
+Interior = ExtResource( 2 )
+
+[node name="Door2" parent="." index="3" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.556229, -0.152235, 4.82139 )
+
+[node name="Sprite3D" parent="Door2" index="0"]
+flip_h = true
+
+[node name="StaticBody" parent="Door2/Sprite3D" index="0"]
+Interior = ExtResource( 2 )
+
+[editable path="Door"]
+
+[editable path="Door2"]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="6" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="House.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="6" height="16">
+  <data encoding="csv">
+80,81,81,81,81,82,
+278,279,281,282,283,280,
+347,348,350,351,352,349,
+80,81,81,81,81,82,
+278,289,290,279,279,280,
+347,358,359,348,348,349,
+80,81,81,81,81,82,
+278,279,279,289,290,280,
+347,348,348,358,359,349,
+80,81,81,81,81,82,
+278,287,288,287,288,280,
+347,356,357,356,357,349,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+</map>

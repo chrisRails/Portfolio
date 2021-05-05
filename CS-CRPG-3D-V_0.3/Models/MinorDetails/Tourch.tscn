@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/MinorDetails/Fire.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Graphics/Tiled/Tourch.png" type="Texture" id=2]
+
+
+[node name="Tourch" type="Spatial"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+pixel_size = 0.05
+billboard = 2
+shaded = true
+texture = ExtResource( 2 )
+hframes = 4
+
+[node name="Spatial" parent="Sprite3D" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.474672, 0 )
+
+[node name="OmniLight" parent="Sprite3D/Spatial/Sprite3D" index="1"]
+light_energy = 0.798069
+
+[editable path="Sprite3D/Spatial"]

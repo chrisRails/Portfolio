@@ -1,0 +1,286 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "InnInterior.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "exportAsImage.useCurrentScale": false,
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Basic-Terrain.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Border.tmx": {
+            "scale": 5.3675,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 135.91057289240803,
+                "y": 95.85468095016302
+            }
+        },
+        "Bushes.tmx": {
+            "scale": 12.100625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 63.92231806208356,
+                "y": 15.99090956045659
+            }
+        },
+        "C:/Users/cestu/Desktop/1bitpack_kenney_1.1/Tilemap/sample_fantasy.tmx": {
+            "scale": 1.2604817708333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 384.37684003925415,
+                "y": 192.78343060792318
+            }
+        },
+        "C:/Users/cestu/Desktop/1bitpack_kenney_1.1/Tilemap/tileset_colored.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/cestu/Desktop/monochrome_packed.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Doors.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Dungeon Entrance.tmx": {
+            "scale": 3.3546875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 16.84210526315789,
+                "y": 128.17885421518397
+            }
+        },
+        "Dungeon floor.tmx": {
+            "scale": 4.654086538461538,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 88.2020556789422,
+                "y": 64.02975052941481
+            }
+        },
+        "DungeonCealing.tmx": {
+            "scale": 4.654086538461538,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 88.2020556789422,
+                "y": 64.02975052941481
+            }
+        },
+        "DungeonWall_A.tmx": {
+            "scale": 2.7501420454545453,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 144.17437115851453,
+                "y": 47.63390320747895
+            }
+        },
+        "DungeonWall_B.tmx": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 114.125,
+                "y": 51.5
+            }
+        },
+        "DungeonWall_C.tmx": {
+            "scale": 4.654086538461538,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 88.2020556789422,
+                "y": 76.27705180517536
+            }
+        },
+        "DungeonWall_D.tmx": {
+            "scale": 4.654086538461538,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 88.2020556789422,
+                "y": 76.27705180517536
+            }
+        },
+        "DungeonWall_E.tmx": {
+            "scale": 4.654086538461538,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 88.63178554826715,
+                "y": 63.81488559475235
+            }
+        },
+        "DungeonWall_F.tmx": {
+            "scale": 4.654086538461538,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 88.2020556789422,
+                "y": 64.02975052941481
+            }
+        },
+        "Dungeon_A.tmx": {
+            "scale": 2.9039772727272726,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79.71825474466837,
+                "y": 56.12991586773627
+            }
+        },
+        "Dungeon_B.tmx": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 98.875,
+                "y": 74.5
+            }
+        },
+        "Flowers.tmx": {
+            "scale": 6.722569444444445,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 63.889261918289336,
+                "y": 15.990909560456583
+            }
+        },
+        "GrasslandRandTextures.tmx": {
+            "scale": 3.3546875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 72.28691197019097,
+                "y": 167.52678155565906
+            }
+        },
+        "House.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "InnInterior.tmx": {
+            "scale": 2.68375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 72.10060549604097,
+                "y": 160.22356776898
+            }
+        },
+        "Park.tmx": {
+            "scale": 5.3675,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 72.007452258966,
+                "y": 153.7028411737308
+            }
+        },
+        "ShopInterior.tmx": {
+            "scale": 2.68375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 119.79506287843503,
+                "y": 239.77643223102007
+            }
+        },
+        "Tourch.tmx": {
+            "scale": 12.100625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 31.94049894117039,
+                "y": 15.99090956045659
+            }
+        },
+        "Windows.tmx": {
+            "scale": 5.3675,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 130.88029809035862,
+                "y": 61.48113646949233
+            }
+        },
+        "beach_tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "castle.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "cloud_tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "desert.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "dungeon.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "ff_master_tile_sheet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "inside.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 3
+        },
+        "outside.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ruindungeons_sheet_full.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 2
+        },
+        "tf_atlantis_tiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tf_japan_master.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tf_jungle_tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tf_winter_tileB.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "map.height": 20,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 10,
+    "openFiles": [
+        "ff_master_tile_sheet.tsx",
+        "inside.tsx",
+        "tf_japan_master.tsx",
+        "ShopInterior.tmx",
+        "Windows.tmx",
+        "InnInterior.tmx"
+    ],
+    "project": "ModelTextures.tiled-project",
+    "recentFiles": [
+        "ff_master_tile_sheet.tsx",
+        "inside.tsx",
+        "tf_japan_master.tsx",
+        "ShopInterior.tmx",
+        "Windows.tmx",
+        "InnInterior.tmx",
+        "Basic-Terrain.tsx",
+        "beach_tileset.tsx",
+        "castle.tsx",
+        "dungeon.tsx",
+        "ruindungeons_sheet_full.tsx",
+        "tf_winter_tileB.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

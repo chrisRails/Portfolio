@@ -1,0 +1,23 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://Scripts/Tiles/Plains.gd" type="Script" id=1]
+[ext_resource path="res://Models/Grass.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/Details/Trees.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Models/MinorDetails/Rock.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Models/MinorDetails/Flower.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Models/MinorDetails/Bush.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Biomes/Roads/Grassland_Road.tres" type="Resource" id=7]
+[ext_resource path="res://Models/Details/Dungeon_Entrance_Stone_Large.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Models/Details/Dungeon_Entrance_Dirt.tscn" type="PackedScene" id=9]
+
+[resource]
+script = ExtResource( 1 )
+name = "Plains"
+Base_Tile = ExtResource( 2 )
+road = ExtResource( 7 )
+tree = ExtResource( 3 )
+Rock = ExtResource( 4 )
+Flower = ExtResource( 5 )
+Bush = ExtResource( 6 )
+Dungeon_Entrance = ExtResource( 9 )
+Dungeon_Entrance_Large = ExtResource( 8 )

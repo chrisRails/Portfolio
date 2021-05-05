@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="20" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="outside.tsx"/>
+ <tileset firstgid="1249" source="beach_tileset.tsx"/>
+ <tileset firstgid="2185" source="tf_atlantis_tiles.tsx"/>
+ <tileset firstgid="3375" source="tf_japan_master.tsx"/>
+ <tileset firstgid="6623" source="tf_jungle_tileset.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="20" height="6">
+  <data encoding="csv">
+268,269,270,271,272,522,523,524,525,526,527,528,529,530,531,532,1688,1689,1690,0,
+320,321,322,323,324,470,471,472,473,474,475,476,477,478,479,480,6756,6757,6758,0,
+3788,3789,3790,3791,3787,3842,574,575,576,577,578,579,580,581,582,583,6778,6779,6780,0,
+2402,2403,2404,2405,2406,2407,2408,2409,2980,2981,2982,2983,2984,2985,2986,2987,6759,6760,6781,6782,
+0,0,1657,1658,1659,3019,3017,3018,2439,2440,2441,0,3792,3793,0,0,0,0,0,0,
+1691,1692,1693,1694,1695,3053,3051,3052,2473,2474,2475,0,3848,3849,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

@@ -1,0 +1,1083 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://ToolScripts/Item_Tool.gd" type="Script" id=1]
+[ext_resource path="res://EditorTheme.tres" type="Theme" id=2]
+[ext_resource path="res://Graphics/GUI/Fonts/Kenney Mini.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://ToolScripts/Item_Edit.gd" type="Script" id=4]
+[ext_resource path="res://ToolScripts/Effects_List.gd" type="Script" id=5]
+[ext_resource path="res://ToolScripts/Effect_Edit.gd" type="Script" id=6]
+[ext_resource path="res://ToolScripts/Load Item.gd" type="Script" id=7]
+[ext_resource path="res://ToolScripts/IconControl.gd" type="Script" id=8]
+[ext_resource path="res://Graphics/individual_16x16/icon001.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 15
+outline_size = 1
+outline_color = Color( 0.243137, 0.231373, 0.27451, 1 )
+use_mipmaps = true
+extra_spacing_char = 2
+font_data = ExtResource( 3 )
+
+[node name="Item_Tool" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Menu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -205.568
+margin_top = -238.265
+margin_right = 202.432
+margin_bottom = -81.2646
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Menu/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -164.93
+margin_top = -17.1021
+margin_right = 58.0704
+margin_bottom = 5.89787
+rect_scale = Vector2( 1.5, 1.5 )
+text = "What do you want to do?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Menu/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -118.909
+margin_top = -69.8578
+margin_right = 38.0914
+margin_bottom = -55.8578
+rect_scale = Vector2( 1.5, 1.5 )
+text = "Item Editor"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="Menu"]
+margin_left = 373.0
+margin_top = 254.0
+margin_right = 646.0
+margin_bottom = 396.0
+
+[node name="New" type="Button" parent="Menu/Panel2"]
+margin_left = 93.1643
+margin_top = 14.592
+margin_right = 185.164
+margin_bottom = 43.592
+text = "New Item"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Load" type="Button" parent="Menu/Panel2"]
+margin_left = 90.9194
+margin_top = 52.7557
+margin_right = 188.919
+margin_bottom = 81.7557
+text = "Load Item"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="Button" parent="Menu/Panel2"]
+margin_left = 113.369
+margin_top = 94.2868
+margin_right = 161.369
+margin_bottom = 123.287
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Item_Edit" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Item_Edit"]
+margin_left = 74.6652
+margin_top = 21.6652
+margin_right = 631.665
+margin_bottom = 570.665
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Base" type="Control" parent="Item_Edit"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tiles" type="Control" parent="Item_Edit/Base"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Item_Edit/Base/tiles"]
+margin_left = 93.4536
+margin_top = 44.738
+margin_right = 155.454
+margin_bottom = 67.738
+theme = ExtResource( 2 )
+text = "Name : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Item_Edit/Base/tiles"]
+margin_left = 84.4536
+margin_top = 105.738
+margin_right = 160.454
+margin_bottom = 128.738
+theme = ExtResource( 2 )
+text = "Weight : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Item_Edit/Base/tiles"]
+margin_left = 379.454
+margin_top = 46.738
+margin_right = 455.454
+margin_bottom = 69.738
+theme = ExtResource( 2 )
+text = "Type : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="LineEdit" parent="Item_Edit/Base"]
+margin_left = 153.711
+margin_top = 41.4913
+margin_right = 339.711
+margin_bottom = 74.4913
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type" type="OptionButton" parent="Item_Edit/Base"]
+margin_left = 436.711
+margin_top = 44.4913
+margin_right = 609.711
+margin_bottom = 73.4913
+text = "weapon"
+items = [ "weapon", null, false, 0, null, "armor", null, false, 1, null, "consumable", null, false, 2, null, "item", null, false, 3, null, "quest", null, false, 4, null, "currency", null, false, 5, null, "other", null, false, 6, null ]
+selected = 0
+
+[node name="Weight" type="LineEdit" parent="Item_Edit/Base"]
+margin_left = 157.711
+margin_top = 103.491
+margin_right = 338.711
+margin_bottom = 134.491
+
+[node name="Effects" type="Button" parent="Item_Edit/Base"]
+margin_left = 444.502
+margin_top = 102.783
+margin_right = 604.502
+margin_bottom = 137.783
+rect_min_size = Vector2( 160, 35 )
+text = "Effects"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Save" type="Button" parent="Item_Edit/Base"]
+margin_left = 252.152
+margin_top = 535.029
+margin_right = 311.152
+margin_bottom = 564.029
+text = "save"
+
+[node name="Cancel" type="Button" parent="Item_Edit/Base"]
+margin_left = 358.098
+margin_top = 535.029
+margin_right = 432.098
+margin_bottom = 564.029
+text = "Cancel"
+
+[node name="Effects" type="Control" parent="Item_Edit"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Item_Edit/Effects"]
+margin_left = 659.0
+margin_top = 24.0
+margin_right = 995.0
+margin_bottom = 570.0
+
+[node name="EffectList" type="ItemList" parent="Item_Edit/Effects"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 680.0
+margin_top = 40.0
+margin_right = 640.0
+rect_min_size = Vector2( 300, 400 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="New_Effect" type="Button" parent="Item_Edit/Effects"]
+margin_left = 680.0
+margin_top = 456.0
+margin_right = 692.0
+margin_bottom = 485.0
+text = "New Effect"
+
+[node name="Edit_Effect" type="Button" parent="Item_Edit/Effects"]
+margin_left = 864.0
+margin_top = 456.0
+margin_right = 977.0
+margin_bottom = 485.0
+text = "Edit Effect"
+
+[node name="Delete" type="Button" parent="Item_Edit/Effects"]
+margin_left = 760.0
+margin_top = 512.0
+margin_right = 897.0
+margin_bottom = 541.0
+text = "Delete Effect"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect" type="Control" parent="Item_Edit"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Item_Edit/Effect"]
+margin_left = 659.0
+margin_top = 24.0
+margin_right = 995.0
+margin_bottom = 570.0
+
+[node name="Tiles" type="Control" parent="Item_Edit/Effect"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 696.0
+margin_top = 32.0
+margin_right = 770.0
+margin_bottom = 55.0
+text = "Element"
+
+[node name="Label2" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 864.0
+margin_top = 32.0
+margin_right = 938.0
+margin_bottom = 55.0
+text = "Effect"
+
+[node name="Label3" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 688.0
+margin_top = 112.0
+margin_right = 762.0
+margin_bottom = 135.0
+text = "Range Type"
+
+[node name="Label4" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 848.0
+margin_top = 112.0
+margin_right = 968.0
+margin_bottom = 135.0
+text = "Range Amount"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 672.0
+margin_top = 200.0
+margin_right = 685.0
+margin_bottom = 223.0
+text = "#"
+
+[node name="Label6" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 824.0
+margin_top = 200.0
+margin_right = 838.0
+margin_bottom = 223.0
+text = "%"
+
+[node name="Label7" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 672.0
+margin_top = 232.0
+margin_right = 828.0
+margin_bottom = 255.0
+text = "Chance of effect :"
+
+[node name="Label8" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 664.0
+margin_top = 280.0
+margin_right = 820.0
+margin_bottom = 303.0
+text = "Name :"
+
+[node name="Label9" type="Label" parent="Item_Edit/Effect/Tiles"]
+margin_left = 680.0
+margin_top = 320.0
+margin_right = 836.0
+margin_bottom = 343.0
+text = "Description "
+
+[node name="Element" type="OptionButton" parent="Item_Edit/Effect"]
+margin_left = 680.0
+margin_top = 64.0
+margin_right = 800.0
+margin_bottom = 93.0
+
+[node name="Effect" type="OptionButton" parent="Item_Edit/Effect"]
+margin_left = 848.0
+margin_top = 64.0
+margin_right = 968.0
+margin_bottom = 93.0
+
+[node name="Range_Type" type="OptionButton" parent="Item_Edit/Effect"]
+margin_left = 680.0
+margin_top = 144.0
+margin_right = 800.0
+margin_bottom = 173.0
+
+[node name="Range_Amount" type="LineEdit" parent="Item_Edit/Effect"]
+margin_left = 848.0
+margin_top = 144.0
+margin_right = 968.0
+margin_bottom = 175.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Num" type="LineEdit" parent="Item_Edit/Effect"]
+margin_left = 688.0
+margin_top = 200.0
+margin_right = 760.0
+margin_bottom = 223.0
+
+[node name="Per" type="LineEdit" parent="Item_Edit/Effect"]
+margin_left = 848.0
+margin_top = 200.0
+margin_right = 920.0
+margin_bottom = 223.0
+
+[node name="Chance_Effect" type="LineEdit" parent="Item_Edit/Effect"]
+margin_left = 848.0
+margin_top = 232.0
+margin_right = 920.0
+margin_bottom = 255.0
+
+[node name="Name" type="LineEdit" parent="Item_Edit/Effect"]
+margin_left = 728.0
+margin_top = 280.0
+margin_right = 968.0
+margin_bottom = 303.0
+
+[node name="Desc" type="TextEdit" parent="Item_Edit/Effect"]
+margin_left = 680.0
+margin_top = 344.0
+margin_right = 976.0
+margin_bottom = 512.0
+wrap_enabled = true
+
+[node name="Save" type="Button" parent="Item_Edit/Effect"]
+margin_left = 680.0
+margin_top = 528.0
+margin_right = 739.0
+margin_bottom = 557.0
+text = "Save"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cancel" type="Button" parent="Item_Edit/Effect"]
+margin_left = 904.0
+margin_top = 528.0
+margin_right = 978.0
+margin_bottom = 557.0
+text = "Cancel"
+
+[node name="Tags" type="Control" parent="Item_Edit"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tiles" type="Control" parent="Item_Edit/Tags"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Item_Edit/Tags/tiles"]
+margin_left = 84.4536
+margin_top = 154.738
+margin_right = 146.454
+margin_bottom = 177.738
+theme = ExtResource( 2 )
+text = "Icon : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Item_Edit/Tags/tiles"]
+margin_left = 81.4536
+margin_top = 262.738
+margin_right = 150.454
+margin_bottom = 285.738
+theme = ExtResource( 2 )
+text = "Value : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Item_Edit/Tags/tiles"]
+margin_left = 79.4536
+margin_top = 216.738
+margin_right = 152.454
+margin_bottom = 239.738
+theme = ExtResource( 2 )
+text = "Known : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="Item_Edit/Tags/tiles"]
+margin_left = 310.0
+margin_top = 192.0
+margin_right = 369.0
+margin_bottom = 215.0
+theme = ExtResource( 2 )
+text = "Desc : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IconNum" type="LineEdit" parent="Item_Edit/Tags"]
+margin_left = 216.0
+margin_top = 152.0
+margin_right = 276.0
+margin_bottom = 183.0
+text = "001"
+
+[node name="Icon_Up" type="Button" parent="Item_Edit/Tags"]
+margin_left = 288.0
+margin_top = 152.0
+margin_right = 342.0
+margin_bottom = 181.0
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon_Down" type="Button" parent="Item_Edit/Tags"]
+margin_left = 144.0
+margin_top = 152.0
+margin_right = 203.0
+margin_bottom = 181.0
+text = "Prev"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="Item_Edit/Tags"]
+margin_left = 216.0
+margin_top = 192.0
+margin_right = 280.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 64, 64 )
+texture = ExtResource( 9 )
+expand = true
+
+[node name="Value" type="LineEdit" parent="Item_Edit/Tags"]
+margin_left = 148.0
+margin_top = 261.0
+margin_right = 275.0
+margin_bottom = 292.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Known" type="CheckBox" parent="Item_Edit/Tags"]
+margin_left = 149.0
+margin_top = 215.0
+margin_right = 173.0
+margin_bottom = 246.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="Desc" type="TextEdit" parent="Item_Edit/Tags"]
+margin_left = 369.0
+margin_top = 176.0
+margin_right = 622.0
+margin_bottom = 288.0
+wrap_enabled = true
+
+[node name="Weapon" type="Control" parent="Item_Edit"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tiles" type="Control" parent="Item_Edit/Weapon"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 84.757
+margin_top = 328.434
+margin_right = 210.757
+margin_bottom = 351.434
+text = "Weapon Type :"
+
+[node name="Label2" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 370.812
+margin_top = 328.434
+margin_right = 496.812
+margin_bottom = 351.434
+text = "Material :"
+
+[node name="Label3" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 80.5193
+margin_top = 385.645
+margin_right = 212.519
+margin_bottom = 408.645
+text = "Attack Bonus :"
+
+[node name="Label4" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 295.0
+margin_top = 382.0
+margin_right = 374.0
+margin_bottom = 405.0
+text = "Damage :"
+
+[node name="Label5" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 448.0
+margin_top = 380.0
+margin_right = 460.0
+margin_bottom = 403.0
+text = "D"
+
+[node name="Label6" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 536.995
+margin_top = 380.0
+margin_right = 548.995
+margin_bottom = 403.0
+text = "+"
+
+[node name="Label7" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 80.9885
+margin_top = 438.152
+margin_right = 212.988
+margin_bottom = 461.152
+text = "Attack Speed :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 305.0
+margin_top = 434.0
+margin_right = 370.0
+margin_bottom = 457.0
+text = "Range :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label9" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 97.3453
+margin_top = 494.389
+margin_right = 203.345
+margin_bottom = 517.389
+text = "Crit Range :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label10" type="Label" parent="Item_Edit/Weapon/Tiles"]
+margin_left = 283.811
+margin_top = 496.508
+margin_right = 425.811
+margin_bottom = 519.508
+text = "Crit Multiplier :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weapon_Type" type="OptionButton" parent="Item_Edit/Weapon"]
+margin_left = 215.638
+margin_top = 325.822
+margin_right = 364.638
+margin_bottom = 354.822
+
+[node name="Material" type="OptionButton" parent="Item_Edit/Weapon"]
+margin_left = 464.612
+margin_top = 324.762
+margin_right = 613.612
+margin_bottom = 353.762
+
+[node name="Attack_Bonus" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 213.881
+margin_top = 384.892
+margin_right = 273.881
+margin_bottom = 407.892
+
+[node name="Damage_N" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 380.217
+margin_top = 382.773
+margin_right = 440.217
+margin_bottom = 405.773
+
+[node name="Damage_D" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 469.212
+margin_top = 382.773
+margin_right = 529.212
+margin_bottom = 405.773
+
+[node name="Damage_B" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 559.266
+margin_top = 381.714
+margin_right = 619.266
+margin_bottom = 404.714
+
+[node name="Attack_Speed" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 216.0
+margin_top = 438.925
+margin_right = 276.0
+margin_bottom = 461.925
+
+[node name="Range" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 379.157
+margin_top = 434.687
+margin_right = 439.157
+margin_bottom = 457.687
+
+[node name="Crit_Range" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 212.822
+margin_top = 492.957
+margin_right = 272.822
+margin_bottom = 515.957
+
+[node name="Crit_Mul" type="LineEdit" parent="Item_Edit/Weapon"]
+margin_left = 428.952
+margin_top = 495.076
+margin_right = 488.952
+margin_bottom = 518.076
+
+[node name="Armor" type="Control" parent="Item_Edit"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tiles" type="Control" parent="Item_Edit/Armor"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Item_Edit/Armor/tiles"]
+margin_left = 91.1138
+margin_top = 328.434
+margin_right = 206.114
+margin_bottom = 351.434
+text = "Armor Type :"
+
+[node name="Label2" type="Label" parent="Item_Edit/Armor/tiles"]
+margin_left = 371.872
+margin_top = 327.374
+margin_right = 486.872
+margin_bottom = 350.374
+text = "Material :"
+
+[node name="Label3" type="Label" parent="Item_Edit/Armor/tiles"]
+margin_left = 83.6976
+margin_top = 393.061
+margin_right = 198.698
+margin_bottom = 416.061
+text = "AC Bonus :"
+
+[node name="Label4" type="Label" parent="Item_Edit/Armor/tiles"]
+margin_left = 310.423
+margin_top = 392.001
+margin_right = 496.423
+margin_bottom = 415.001
+text = "Damage Resistance :"
+
+[node name="Armor_Type" type="OptionButton" parent="Item_Edit/Armor"]
+margin_left = 215.638
+margin_top = 325.822
+margin_right = 364.638
+margin_bottom = 354.822
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Material" type="OptionButton" parent="Item_Edit/Armor"]
+margin_left = 464.612
+margin_top = 324.762
+margin_right = 613.612
+margin_bottom = 353.762
+
+[node name="AC_Bonus" type="LineEdit" parent="Item_Edit/Armor"]
+margin_left = 215.0
+margin_top = 391.0
+margin_right = 287.0
+margin_bottom = 418.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Damage_Res" type="LineEdit" parent="Item_Edit/Armor"]
+margin_left = 509.157
+margin_top = 393.0
+margin_right = 580.157
+margin_bottom = 420.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Consumable" type="Control" parent="Item_Edit"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control3" type="Control" parent="Item_Edit/Consumable"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Item_Edit/Consumable/Control3"]
+margin_left = 88.0
+margin_top = 328.0
+margin_right = 128.0
+margin_bottom = 351.0
+text = "Consumable Type :"
+
+[node name="Label2" type="Label" parent="Item_Edit/Consumable/Control3"]
+margin_left = 416.0
+margin_top = 328.0
+margin_right = 495.0
+margin_bottom = 351.0
+text = "Durtion :"
+
+[node name="Label3" type="Label" parent="Item_Edit/Consumable/Control3"]
+margin_left = 88.0
+margin_top = 384.0
+margin_right = 238.0
+margin_bottom = 407.0
+text = "Expiration Time :"
+
+[node name="Consumable_Type" type="OptionButton" parent="Item_Edit/Consumable"]
+margin_left = 256.0
+margin_top = 328.0
+margin_right = 405.0
+margin_bottom = 357.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Expiration_Time" type="LineEdit" parent="Item_Edit/Consumable"]
+margin_left = 248.0
+margin_top = 384.0
+margin_right = 377.0
+margin_bottom = 408.0
+
+[node name="Durration" type="LineEdit" parent="Item_Edit/Consumable"]
+margin_left = 496.0
+margin_top = 328.0
+margin_right = 625.0
+margin_bottom = 352.0
+
+[node name="E_Item" type="Control" parent="Item_Edit"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control4" type="Control" parent="Item_Edit/E_Item"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Item_Edit/E_Item/Control4"]
+margin_left = 88.0
+margin_top = 328.0
+margin_right = 184.0
+margin_bottom = 351.0
+text = "Item Type :"
+
+[node name="Label2" type="Label" parent="Item_Edit/E_Item/Control4"]
+margin_left = 368.0
+margin_top = 328.0
+margin_right = 464.0
+margin_bottom = 351.0
+text = "Material :"
+
+[node name="E_Item_Type" type="OptionButton" parent="Item_Edit/E_Item"]
+margin_left = 184.0
+margin_top = 328.0
+margin_right = 333.0
+margin_bottom = 357.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Material" type="OptionButton" parent="Item_Edit/E_Item"]
+margin_left = 464.0
+margin_top = 328.0
+margin_right = 613.0
+margin_bottom = 357.0
+
+[node name="Quest" type="Control" parent="Item_Edit"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control5" type="Control" parent="Item_Edit/Quest"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Item_Edit/Quest/Control5"]
+margin_left = 88.0
+margin_top = 336.0
+margin_right = 172.0
+margin_bottom = 359.0
+text = "Quest ID :"
+
+[node name="Label2" type="Label" parent="Item_Edit/Quest/Control5"]
+margin_left = 312.0
+margin_top = 336.0
+margin_right = 396.0
+margin_bottom = 359.0
+text = "Hidden :"
+
+[node name="Quest_ID" type="LineEdit" parent="Item_Edit/Quest"]
+margin_left = 176.0
+margin_top = 336.0
+margin_right = 288.0
+margin_bottom = 360.0
+
+[node name="Hidden" type="CheckBox" parent="Item_Edit/Quest"]
+margin_left = 384.0
+margin_top = 336.0
+margin_right = 408.0
+margin_bottom = 367.0
+
+[node name="Other" type="Control" parent="Item_Edit"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control6" type="Control" parent="Item_Edit/Other"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label5" type="Label" parent="Item_Edit/Other/Control6"]
+margin_left = 91.1138
+margin_top = 328.434
+margin_right = 206.114
+margin_bottom = 351.434
+text = "Other Type :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="Item_Edit/Other/Control6"]
+margin_left = 371.872
+margin_top = 327.374
+margin_right = 486.872
+margin_bottom = 350.374
+text = "Material :"
+
+[node name="Other_Type" type="OptionButton" parent="Item_Edit/Other"]
+margin_left = 215.638
+margin_top = 325.822
+margin_right = 364.638
+margin_bottom = 354.822
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Material" type="OptionButton" parent="Item_Edit/Other"]
+margin_left = 464.612
+margin_top = 324.762
+margin_right = 613.612
+margin_bottom = 353.762
+
+[node name="Currancy" type="Control" parent="Item_Edit"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control7" type="Control" parent="Item_Edit/Currancy"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Item_Edit/Currancy/Control7"]
+margin_left = 88.0
+margin_top = 320.0
+margin_right = 164.0
+margin_bottom = 343.0
+text = "Source :"
+
+[node name="Source" type="LineEdit" parent="Item_Edit/Currancy"]
+margin_left = 168.0
+margin_top = 320.0
+margin_right = 328.0
+margin_bottom = 344.0
+
+[node name="Load Item" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Load Item"]
+margin_left = 320.0
+margin_top = 64.0
+margin_right = 696.0
+margin_bottom = 512.0
+
+[node name="ItemList" type="ItemList" parent="Load Item"]
+margin_left = 336.0
+margin_top = 144.0
+margin_right = 680.0
+margin_bottom = 456.0
+fixed_icon_size = Vector2( 32, 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Load_Item" type="Button" parent="Load Item"]
+margin_left = 336.0
+margin_top = 464.0
+margin_right = 390.0
+margin_bottom = 493.0
+text = "Load"
+
+[node name="Cancel_Load" type="Button" parent="Load Item"]
+margin_left = 416.0
+margin_top = 464.0
+margin_right = 470.0
+margin_bottom = 493.0
+text = "Cancel"
+
+[node name="Delete_Load" type="Button" parent="Load Item"]
+margin_left = 512.0
+margin_top = 464.0
+margin_right = 586.0
+margin_bottom = 493.0
+text = "Delete"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Catagory" type="OptionButton" parent="Load Item"]
+margin_left = 512.0
+margin_top = 80.0
+margin_right = 677.0
+margin_bottom = 109.0
+text = "weapon"
+items = [ "weapon", null, false, 0, null, "armor", null, false, 1, null, "consumable", null, false, 2, null, "item", null, false, 3, null, "quest", null, false, 4, null, "other", null, false, 5, null, "currency", null, false, 6, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Load Item"]
+margin_left = 408.0
+margin_top = 80.0
+margin_right = 509.0
+margin_bottom = 104.0
+text = "Catagory : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Menu/Panel2/New" to="." method="_on_New_pressed"]
+[connection signal="pressed" from="Menu/Panel2/Load" to="." method="_on_Load_pressed"]
+[connection signal="pressed" from="Menu/Panel2/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="item_selected" from="Item_Edit/Base/Type" to="Item_Edit" method="_on_Type_item_selected"]
+[connection signal="pressed" from="Item_Edit/Base/Effects" to="Item_Edit" method="_on_Effects_pressed"]
+[connection signal="pressed" from="Item_Edit/Base/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="Item_Edit/Base/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="item_activated" from="Item_Edit/Effects/EffectList" to="Item_Edit" method="_on_EffectList_item_activated"]
+[connection signal="item_selected" from="Item_Edit/Effects/EffectList" to="Item_Edit/Effects" method="_on_EffectList_item_selected"]
+[connection signal="nothing_selected" from="Item_Edit/Effects/EffectList" to="Item_Edit/Effects" method="_on_EffectList_nothing_selected"]
+[connection signal="pressed" from="Item_Edit/Effects/New_Effect" to="Item_Edit" method="_on_New_Effect_pressed"]
+[connection signal="pressed" from="Item_Edit/Effects/Edit_Effect" to="Item_Edit" method="_on_Edit_Effect_pressed"]
+[connection signal="pressed" from="Item_Edit/Effects/Delete" to="Item_Edit/Effects" method="_on_Delete_pressed"]
+[connection signal="pressed" from="Item_Edit/Effect/Save" to="Item_Edit" method="_on_Save_pressed"]
+[connection signal="pressed" from="Item_Edit/Effect/Cancel" to="Item_Edit" method="_on_ECancel_pressed"]
+[connection signal="text_changed" from="Item_Edit/Tags/IconNum" to="Item_Edit/Tags" method="_on_IconNum_text_changed"]
+[connection signal="pressed" from="Item_Edit/Tags/Icon_Up" to="Item_Edit/Tags" method="_on_Icon_Up_pressed"]
+[connection signal="pressed" from="Item_Edit/Tags/Icon_Down" to="Item_Edit/Tags" method="_on_Icon_Down_pressed"]
+[connection signal="item_activated" from="Load Item/ItemList" to="." method="_on_ItemList_item_activated"]
+[connection signal="item_selected" from="Load Item/ItemList" to="Load Item" method="_on_ItemList_item_selected"]
+[connection signal="nothing_selected" from="Load Item/ItemList" to="." method="_on_ItemList_nothing_selected"]
+[connection signal="pressed" from="Load Item/Load_Item" to="." method="_on_Load_Item_pressed"]
+[connection signal="pressed" from="Load Item/Cancel_Load" to="." method="_on_Cancel_Load_pressed"]
+[connection signal="pressed" from="Load Item/Delete_Load" to="." method="_on_Delete_Load_pressed"]
+[connection signal="item_selected" from="Load Item/Catagory" to="Load Item" method="_on_Catagory_item_selected"]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="8" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="ff_master_tile_sheet.tsx"/>
+ <tileset firstgid="2133" source="tf_jungle_tileset.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="8" height="2">
+  <data encoding="csv">
+2247,2248,2250,2251,2246,2200,2203,2222,
+1070,1111,1113,1110,1115,1116,1109,1069
+</data>
+ </layer>
+</map>

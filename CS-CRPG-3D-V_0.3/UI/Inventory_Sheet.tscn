@@ -1,0 +1,308 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/HUD/ItemList.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/HUD/itembutton.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/HUD/Inventory_Sheet.gd" type="Script" id=3]
+[ext_resource path="res://FontTheme.tres" type="Theme" id=4]
+[ext_resource path="res://Graphics/GUI/pixeluipack/9-Slice/Ancient/tan_inlay.png" type="Texture" id=5]
+
+[node name="Inventory_Sheet" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.707092
+margin_right = 0.707031
+theme = ExtResource( 4 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 480, 600 )
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+margin_left = 22.0
+margin_top = 22.0
+margin_right = 453.0
+margin_bottom = 106.0
+columns = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weapon" type="Button" parent="Panel/GridContainer"]
+margin_right = 105.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 105, 40 )
+text = "weapon"
+script = ExtResource( 2 )
+
+[node name="Armor" type="Button" parent="Panel/GridContainer"]
+margin_left = 109.0
+margin_right = 214.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 105, 40 )
+text = "armor"
+script = ExtResource( 2 )
+
+[node name="Item" type="Button" parent="Panel/GridContainer"]
+margin_left = 218.0
+margin_right = 323.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 105, 40 )
+text = "item"
+script = ExtResource( 2 )
+
+[node name="Ammo" type="Button" parent="Panel/GridContainer"]
+margin_left = 327.0
+margin_right = 432.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 105, 40 )
+text = "ammo"
+script = ExtResource( 2 )
+
+[node name="Consumable" type="Button" parent="Panel/GridContainer"]
+margin_top = 44.0
+margin_right = 105.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 105, 40 )
+text = "consumable"
+script = ExtResource( 2 )
+
+[node name="Other" type="Button" parent="Panel/GridContainer"]
+margin_left = 109.0
+margin_top = 44.0
+margin_right = 214.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 105, 40 )
+text = "other"
+script = ExtResource( 2 )
+
+[node name="Quest" type="Button" parent="Panel/GridContainer"]
+margin_left = 218.0
+margin_top = 44.0
+margin_right = 323.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 105, 40 )
+text = "quest"
+script = ExtResource( 2 )
+
+[node name="Currency" type="Button" parent="Panel/GridContainer"]
+margin_left = 327.0
+margin_top = 44.0
+margin_right = 432.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 105, 40 )
+text = "currency"
+script = ExtResource( 2 )
+
+[node name="inv_Holder" type="Control" parent="Panel"]
+margin_left = 24.0
+margin_top = 124.0
+margin_right = 347.0
+margin_bottom = 563.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weapons" type="ItemList" parent="Panel/inv_Holder"]
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Armor" type="ItemList" parent="Panel/inv_Holder"]
+visible = false
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Item" type="ItemList" parent="Panel/inv_Holder"]
+visible = false
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ammo" type="ItemList" parent="Panel/inv_Holder"]
+visible = false
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Consumable" type="ItemList" parent="Panel/inv_Holder"]
+visible = false
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Other" type="ItemList" parent="Panel/inv_Holder"]
+visible = false
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quest" type="ItemList" parent="Panel/inv_Holder"]
+visible = false
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Currency" type="ItemList" parent="Panel/inv_Holder"]
+visible = false
+margin_top = -2.0
+margin_right = 323.0
+margin_bottom = 439.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="NinePatchRect" parent="Panel/inv_Holder"]
+margin_left = 330.0
+margin_top = -2.0
+margin_right = 433.0
+margin_bottom = 211.0
+theme = ExtResource( 4 )
+texture = ExtResource( 5 )
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/inv_Holder/Stats"]
+margin_left = 5.0
+margin_top = 8.0
+margin_right = 95.0
+margin_bottom = 26.0
+text = "Weight"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weight" type="Label" parent="Panel/inv_Holder/Stats"]
+margin_left = 8.0
+margin_top = 30.0
+margin_right = 51.0
+margin_bottom = 52.0
+text = "50 "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weight2" type="Label" parent="Panel/inv_Holder/Stats"]
+margin_left = 43.8656
+margin_top = 29.685
+margin_right = 85.8656
+margin_bottom = 51.685
+text = " 100"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weight3" type="Label" parent="Panel/inv_Holder/Stats"]
+margin_left = 28.4315
+margin_top = 30.315
+margin_right = 70.4315
+margin_bottom = 52.315
+text = "/"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel/inv_Holder/Stats"]
+margin_left = 4.0
+margin_top = 71.0
+margin_right = 99.0
+margin_bottom = 100.0
+text = "Speed"
+align = 1
+valign = 1
+
+[node name="Speed" type="Label" parent="Panel/inv_Holder/Stats"]
+margin_left = 3.0
+margin_top = 97.0
+margin_right = 99.0
+margin_bottom = 123.0
+text = "50"
+align = 1
+valign = 1
+[connection signal="hide" from="." to="Panel/inv_Holder/Weapons" method="_on_Inventory_Sheet_hide"]
+[connection signal="pressed" from="Panel/GridContainer/Weapon" to="Panel/GridContainer/Weapon" method="_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/Armor" to="Panel/GridContainer/Armor" method="_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/Item" to="Panel/GridContainer/Item" method="_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/Ammo" to="Panel/GridContainer/Ammo" method="_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/Consumable" to="Panel/GridContainer/Consumable" method="_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/Other" to="Panel/GridContainer/Other" method="_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/Quest" to="Panel/GridContainer/Quest" method="_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/Currency" to="Panel/GridContainer/Currency" method="_pressed"]
+[connection signal="item_activated" from="Panel/inv_Holder/Weapons" to="Panel/inv_Holder" method="_on_Weapons_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Weapons" to="Panel/inv_Holder" method="_on_Weapons_item_selected"]
+[connection signal="item_activated" from="Panel/inv_Holder/Armor" to="Panel/inv_Holder" method="_on_Armor_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Armor" to="Panel/inv_Holder" method="_on_Armor_item_selected"]
+[connection signal="item_activated" from="Panel/inv_Holder/Item" to="Panel/inv_Holder" method="_on_Item_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Item" to="Panel/inv_Holder" method="_on_Item_item_selected"]
+[connection signal="item_activated" from="Panel/inv_Holder/Ammo" to="Panel/inv_Holder" method="_on_Ammo_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Ammo" to="Panel/inv_Holder" method="_on_Ammo_item_selected"]
+[connection signal="item_activated" from="Panel/inv_Holder/Consumable" to="Panel/inv_Holder" method="_on_Consumable_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Consumable" to="Panel/inv_Holder" method="_on_Consumable_item_selected"]
+[connection signal="item_activated" from="Panel/inv_Holder/Other" to="Panel/inv_Holder" method="_on_Other_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Other" to="Panel/inv_Holder" method="_on_Other_item_selected"]
+[connection signal="item_activated" from="Panel/inv_Holder/Quest" to="Panel/inv_Holder" method="_on_Quest_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Quest" to="Panel/inv_Holder" method="_on_Quest_item_selected"]
+[connection signal="item_activated" from="Panel/inv_Holder/Currency" to="Panel/inv_Holder" method="_on_Currancy_item_activated"]
+[connection signal="item_selected" from="Panel/inv_Holder/Currency" to="Panel/inv_Holder" method="_on_Currency_item_selected"]

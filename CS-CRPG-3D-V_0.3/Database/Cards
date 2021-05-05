@@ -1,0 +1,205 @@
+{
+	"sheets": [
+		{
+			"name": "Class",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "ID"
+				},
+				{
+					"typeStr": "1",
+					"name": "Name",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "Description",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_body",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_mind",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_senses",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability1",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability2",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability3",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability4",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability5",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability6",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"Name": "Basic",
+					"Description": "The Basic Class",
+					"stat_body": 5,
+					"stat_mind": 5,
+					"stat_senses": 5,
+					"ability1": "_ice_01",
+					"ability2": "_fire_01",
+					"ability3": "_water_01",
+					"ability4": "_air_01",
+					"ability5": "_electricity_01",
+					"ability6": "_void_01",
+					"ID": "_test_01"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Race",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "ID",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "Name",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_body"
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_mind",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_senses",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability1",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability2",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "Description",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"ID": "_test_01",
+					"Name": "Basic",
+					"stat_body": 3,
+					"stat_mind": 3,
+					"stat_senses": 3,
+					"ability1": "_earth_01",
+					"ability2": "_nature_01",
+					"Description": "The Basic Race"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Personality",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "ID",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "Name",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "Description",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_body",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_mind",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "stat_senses",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability1",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ability2",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"ID": "_test_01",
+					"Name": "Basic",
+					"Description": "The Basic Personality",
+					"stat_body": 2,
+					"stat_mind": 2,
+					"stat_senses": 2,
+					"ability1": "_sheild_01",
+					"ability2": "_light_01"
+				}
+			],
+			"separators": [],
+			"props": {}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

@@ -1,0 +1,134 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Models/MinorDetails/WoodMetalBarrel-closed.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/MinorDetails/WoodMetalCrate.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Models/MinorDetails/WoodCrate.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Models/Store_1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Models/MinorDetails/WoodMetalBarrel-open.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Models/MinorDetails/WoodMetalCrateSmall.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Models/MinorDetails/WoodBarrel-empty.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Models/MinorDetails/WoodCrateSmall.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Models/Details/Store_1.gd" type="Script" id=10]
+[ext_resource path="res://Models/Interiors/StoreInterior01.tscn" type="PackedScene" id=11]
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 10 )
+
+[node name="Store_1" parent="." instance=ExtResource( 5 )]
+
+[node name="Door" parent="Store_1" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.489483, 0.0806466, 3.50579 )
+
+[node name="StaticBody" parent="Store_1/Door/Sprite3D" index="0"]
+Interior = ExtResource( 11 )
+
+[node name="Spot1_A" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_1230" parent="Store_1/Spot1_A" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17422, 0, 4.10794 )
+
+[node name="Object_1231" parent="Store_1/Spot1_A" instance=ExtResource( 4 )]
+transform = Transform( 0.978473, 0, -0.206375, 0, 1, 0, 0.206375, 0, 0.978473, -1.61632, 0.716498, 4.10794 )
+
+[node name="Object_1130" parent="Store_1/Spot1_A" instance=ExtResource( 3 )]
+transform = Transform( 0.979886, 0, -0.199556, 0, 1, 0, 0.199556, 0, 0.979886, -2.06338, 0, 4.12375 )
+
+[node name="Spot1_B" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_1130" parent="Store_1/Spot1_B" instance=ExtResource( 3 )]
+transform = Transform( 0.979886, 0, -0.199556, 0, 1, 0, 0.199556, 0, 0.979886, -2.06338, 0, 4.12375 )
+
+[node name="Object_1380" parent="Store_1/Spot1_B" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.94458, 0, 3.937 )
+
+[node name="Object_2946" parent="Store_1/Spot1_B" instance=ExtResource( 9 )]
+transform = Transform( 0.908443, 0.41801, 0, -0.41801, 0.908443, 0, 0, 0, 1, -1.32456, 0.576029, 4.15854 )
+
+[node name="Spot2_A" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_4467" parent="Store_1/Spot2_A" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.256, 0, 4.35628 )
+
+[node name="Object_1229" parent="Store_1/Spot2_A" instance=ExtResource( 4 )]
+transform = Transform( 0.988266, 0, 0.152744, 0, 1, 0, -0.152744, 0, 0.988266, 1.96636, 0, 4.10794 )
+
+[node name="Spot2_B" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_4467" parent="Store_1/Spot2_B" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59882, 0, 4.01866 )
+
+[node name="Object_3236" parent="Store_1/Spot2_B" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19177, 0.0326993, 4.71381 )
+
+[node name="Object_4278" parent="Store_1/Spot2_B" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42878, 2.38419e-07, 3.90691 )
+
+[node name="Spot3_A" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_1230" parent="Store_1/Spot3_A" instance=ExtResource( 4 )]
+transform = Transform( 0.93343, 0, -0.358759, 0, 1, 0, 0.358759, 0, 0.93343, -4.4928, 0, -2.56959 )
+
+[node name="Object_1130" parent="Store_1/Spot3_A" instance=ExtResource( 3 )]
+transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, -4.55111, 0, -0.579972 )
+
+[node name="Spot3_B" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_1130" parent="Store_1/Spot3_B" instance=ExtResource( 3 )]
+transform = Transform( -0.00852969, -0.925078, 0.379681, 0.999372, 0.00516615, 0.0350384, -0.0343748, 0.379742, 0.924453, -4.03351, 0.443806, -2.81528 )
+
+[node name="Object_4467" parent="Store_1/Spot3_B" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.28772, 0, 1.0301 )
+
+[node name="Object_2946" parent="Store_1/Spot3_B" instance=ExtResource( 9 )]
+transform = Transform( 0.981817, 0, 0.189832, 0, 1, 0, -0.189832, 0, 0.981817, -4.26691, 0.829796, -2.72096 )
+
+[node name="Spot4_A" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_1230" parent="Store_1/Spot4_A" instance=ExtResource( 4 )]
+transform = Transform( 0.93343, 0, -0.358759, 0, 1, 0, 0.358759, 0, 0.93343, 4.28323, 0, -2.56959 )
+
+[node name="Object_1231" parent="Store_1/Spot4_A" instance=ExtResource( 4 )]
+transform = Transform( 0.883242, 0, -0.468917, 0, 1, 0, 0.468917, 0, 0.883242, 4.28323, 0.725369, -2.56959 )
+
+[node name="Object_1232" parent="Store_1/Spot4_A" instance=ExtResource( 4 )]
+transform = Transform( 0.97248, 0, 0.232987, 0, 1, 0, -0.232987, 0, 0.97248, 4.28323, 0.0152115, 0.928426 )
+
+[node name="Object_1130" parent="Store_1/Spot4_A" instance=ExtResource( 3 )]
+transform = Transform( 0.91118, 0, -0.412007, 0, 1, 0, 0.412007, 0, 0.91118, 4.22492, 0, -0.579972 )
+
+[node name="Object_1131" parent="Store_1/Spot4_A" instance=ExtResource( 3 )]
+transform = Transform( 0.958028, 0, 0.286675, 0, 1, 0, -0.286675, 0, 0.958028, 4.22132, 0, -4.06763 )
+
+[node name="Spot4_B" type="Spatial" parent="Store_1"]
+visible = false
+
+[node name="Object_1130" parent="Store_1/Spot4_B" instance=ExtResource( 3 )]
+transform = Transform( 0.0287535, -0.695966, -0.717498, 0.999372, 0.00516615, 0.0350384, -0.0206789, -0.718056, 0.695678, 4.71293, 0.443806, -0.138949 )
+
+[node name="Object_1131" parent="Store_1/Spot4_B" instance=ExtResource( 3 )]
+transform = Transform( -0.0138704, -0.853194, 0.52141, 0.999372, 0.00516615, 0.0350384, -0.0325882, 0.521569, 0.852586, 4.71293, 0.443806, 1.28077 )
+
+[node name="Object_4467" parent="Store_1/Spot4_B" instance=ExtResource( 1 )]
+transform = Transform( -0.0243799, 0, -0.999703, 0, 1, 0, 0.999703, 0, -0.0243799, 4.48831, 0, -2.20097 )
+
+[node name="Object_4468" parent="Store_1/Spot4_B" instance=ExtResource( 1 )]
+transform = Transform( 0.918584, 0, -0.395225, 0, 1, 0, 0.395225, 0, 0.918584, 4.48831, 0, -3.34997 )
+
+[node name="Object_4469" parent="Store_1/Spot4_B" instance=ExtResource( 1 )]
+transform = Transform( 0.780943, 0, 0.624602, 0, 1, 0, -0.624602, 0, 0.780943, 4.47216, 0.736196, -2.85425 )
+
+[node name="Object_2946" parent="Store_1/Spot4_B" instance=ExtResource( 9 )]
+transform = Transform( 0.540681, 0, -0.841228, 0, 1, 0, 0.841228, 0, 0.540681, 4.53871, 0.829796, -0.32067 )
+
+[node name="PlayerSpawn" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.366192, 1.00072, 4.13824 )
+
+[editable path="Store_1/Door"]

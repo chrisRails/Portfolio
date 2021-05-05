@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Items/Consumable.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/individual_16x16/icon304.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Apple"
+type = "consumable"
+icon = 304
+icon_I = ExtResource( 2 )
+value = 5
+weight = 5
+desc = "A red apple"
+known = true
+count = 1
+EffectList = [  ]
+equiped = false
+ID = "Apple"
+subType = "Food"
+duration = 0

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Tiles/Road.gd" type="Script" id=1]
+[ext_resource path="res://Models/Details/Urban_Street_End.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/Details/Urban_Street_3_Way.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Models/Details/Urban_Street_Straight.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Models/Details/Urban_Street_Turn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Models/Details/Urban_Street_4_Way.tscn" type="PackedScene" id=6]
+
+[resource]
+script = ExtResource( 1 )
+name = "Urban Road"
+Straight = ExtResource( 4 )
+Turn = ExtResource( 5 )
+End = ExtResource( 2 )
+Way3 = ExtResource( 3 )
+Way4 = ExtResource( 6 )

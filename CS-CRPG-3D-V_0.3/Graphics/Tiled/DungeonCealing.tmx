@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="12" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="1480" source="ruindungeons_sheet_full.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="12" height="8">
+  <data encoding="csv">
+1300,1300,1300,1300,294,294,294,294,906,906,906,906,
+1300,1299,1299,1300,294,292,292,294,906,904,904,906,
+1300,1299,1299,1300,294,292,292,294,906,904,904,906,
+1300,1300,1300,1300,294,294,294,294,906,906,906,906,
+1596,1594,1597,1594,2332,2330,2330,2333,3264,3260,3261,3260,
+1594,1598,1600,1595,2330,2334,2331,2330,3260,3260,3260,3265,
+1599,1595,1598,1596,2330,2333,2332,2335,3265,3266,3264,3260,
+1594,1600,1597,1598,2331,2330,2330,2330,3260,3262,3260,3263
+</data>
+ </layer>
+</map>

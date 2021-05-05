@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Graphics/Sprites/npc1.png" type="Texture" id=1]
+[ext_resource path="res://Entities/EntityBase.tscn" type="PackedScene" id=2]
+
+[node name="ShopKeeper" type="Spatial"]
+
+[node name="Spatial" parent="." instance=ExtResource( 2 )]
+
+[node name="Sprite3D" parent="Spatial/KinematicBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.911461, 0.000824094 )
+offset = Vector2( 0, 0 )
+texture = ExtResource( 1 )
+
+[editable path="Spatial"]

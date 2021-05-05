@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/Originals/Door.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/1_Tiles/doors.png" type="Texture" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.532554, 1.02917, 0.001 )
+
+[node name="Door" type="Spatial"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.672847, 0 )
+pixel_size = 0.06
+shaded = true
+double_sided = false
+texture = ExtResource( 2 )
+vframes = 8
+hframes = 12
+frame = 3
+
+[node name="StaticBody" type="StaticBody" parent="Sprite3D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Sprite3D/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0656561, 0 )
+shape = SubResource( 1 )
+
+[node name="PlayerSpawn" type="Spatial" parent="Sprite3D/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.33693, 0.50271 )

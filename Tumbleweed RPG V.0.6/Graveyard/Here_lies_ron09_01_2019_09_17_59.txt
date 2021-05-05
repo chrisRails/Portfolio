@@ -1,0 +1,18 @@
+Here lies ron
+Time of Death 09_01_2019_09_17_59
+Here are your character's stats.
+ron
+Gold: 5
+Attack: 10
+Health: 25.0
+Stealth: 7
+Speed: 7
+Healing: 7
+Strength: 5
+Weapon: 
+Armor: 
+Attack item: 
+Stealth item: 
+Strength item: 
+Speed item: 
+Healing Item: 

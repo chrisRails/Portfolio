@@ -1,0 +1,18 @@
+Here lies Jay
+Time of Death 15_10_2018_17_33_41
+Here are your character's stats.
+Jay
+Gold: 23
+Attack: 10
+Health: -7.0
+Stealth: 5
+Speed: 8
+Healing: 5
+Strength: 9
+Weapon: 
+Armor: 
+Attack item: 
+Stealth item: 
+Strength item: 
+Speed item: 
+Healing Item: 

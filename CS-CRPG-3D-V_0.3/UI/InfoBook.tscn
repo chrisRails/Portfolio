@@ -1,0 +1,283 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/HUD/InfoBook.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/GUI/Fonts/Kenney Mini.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://FontTheme.tres" type="Theme" id=3]
+[ext_resource path="res://Graphics/GUI/Info_Book_B.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/individual_16x16/icon071.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/individual_16x16/icon025.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.890196, 0.839216, 0.592157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.94902, 0.941176, 0.772549, 1 )
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color( 0.227451, 0.164706, 0.105882, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.890196, 0.839216, 0.592157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=4]
+extra_spacing_char = -1
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 15
+extra_spacing_char = -1
+font_data = ExtResource( 2 )
+
+[node name="InfoBook" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -400.0
+margin_right = 60.0
+margin_bottom = 407.0
+rect_min_size = Vector2( 460, 407 )
+texture = ExtResource( 4 )
+stretch_mode = 1
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skill" type="Control" parent="TextureRect"]
+visible = false
+margin_left = -9.89948
+margin_top = 6.36396
+margin_right = 30.1005
+margin_bottom = 46.364
+rect_rotation = -1.20088
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="TextureRect/Skill"]
+margin_left = 56.3639
+margin_top = 42.8959
+margin_right = 122.364
+margin_bottom = 108.896
+rect_min_size = Vector2( 66, 66 )
+texture = ExtResource( 5 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="desc" type="Panel" parent="TextureRect/Skill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 72.7675
+margin_top = 124.321
+margin_right = 307.768
+margin_bottom = 264.321
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="TextureRect/Skill/desc"]
+margin_left = 3.0
+margin_top = 5.0
+margin_right = 270.0
+margin_bottom = 173.0
+
+[node name="Name" type="Panel" parent="TextureRect/Skill"]
+margin_left = 161.687
+margin_top = 35.6623
+margin_right = 304.687
+margin_bottom = 58.6623
+custom_styles/panel = SubResource( 2 )
+
+[node name="Label" type="Label" parent="TextureRect/Skill/Name"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Skill"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LV" type="Panel" parent="TextureRect/Skill"]
+margin_left = 143.467
+margin_top = 77.5563
+margin_right = 231.467
+margin_bottom = 100.556
+custom_styles/panel = SubResource( 2 )
+
+[node name="Label" type="Label" parent="TextureRect/Skill/LV"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "LV : 0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="XP" type="Panel" parent="TextureRect/Skill"]
+margin_left = 239.304
+margin_top = 75.4423
+margin_right = 340.304
+margin_bottom = 100.442
+custom_styles/panel = SubResource( 2 )
+
+[node name="Label" type="Label" parent="TextureRect/Skill/XP"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "XP : 10 / 20"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Item" type="Control" parent="TextureRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_rotation = -0.304591
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Panel" parent="TextureRect/Item"]
+margin_left = 176.792
+margin_top = 30.8539
+margin_right = 319.792
+margin_bottom = 53.8538
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureRect/Item/Name"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Item"
+align = 1
+valign = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="TextureRect/Item"]
+margin_left = 63.167
+margin_top = 62.6167
+margin_right = 129.167
+margin_bottom = 128.617
+rect_min_size = Vector2( 66, 66 )
+texture = ExtResource( 6 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="stats" type="Panel" parent="TextureRect/Item"]
+margin_left = 158.247
+margin_top = 59.0787
+margin_right = 337.247
+margin_bottom = 177.079
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="TextureRect/Item/stats"]
+margin_left = 4.0
+margin_top = 2.0
+margin_right = 176.0
+margin_bottom = 115.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="desc" type="Panel" parent="TextureRect/Item"]
+margin_left = 158.096
+margin_top = 181.043
+margin_right = 338.096
+margin_bottom = 304.043
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="TextureRect/Item/desc"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 175.0
+margin_bottom = 120.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/Item"]
+margin_left = 45.0952
+margin_top = 146.305
+margin_right = 151.095
+margin_bottom = 320.305
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="equip" type="Button" parent="TextureRect/Item/VBoxContainer"]
+margin_right = 105.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 83, 40 )
+custom_fonts/font = SubResource( 4 )
+text = "Equip / Use"
+
+[node name="store" type="Button" parent="TextureRect/Item/VBoxContainer"]
+visible = false
+margin_top = 44.0
+margin_right = 105.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 5 )
+disabled = true
+text = "Buy / Sell"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hotbar" type="Button" parent="TextureRect/Item/VBoxContainer"]
+visible = false
+margin_top = 88.0
+margin_right = 105.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 5 )
+text = "Hotbar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="trash" type="Button" parent="TextureRect/Item/VBoxContainer"]
+margin_top = 44.0
+margin_right = 105.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 5 )
+text = "Trash"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureRect/Item/VBoxContainer/equip" to="." method="_on_equip_pressed"]
+[connection signal="pressed" from="TextureRect/Item/VBoxContainer/trash" to="." method="_on_trash_pressed"]

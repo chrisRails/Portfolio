@@ -1,0 +1,100 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Models/MinorDetails/Planter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/MinorDetails/Flower.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/House_1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Models/MinorDetails/Tree.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Models/Details/House_1.gd" type="Script" id=5]
+
+[node name="House_01" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="House_1" parent="." instance=ExtResource( 3 )]
+
+[node name="Planter" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.89993, -0.672562, 2.89909 )
+
+[node name="Flowers" type="Spatial" parent="Planter"]
+visible = false
+
+[node name="Sprite_Detail_Base" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.936355, 0 )
+
+[node name="Sprite_Detail_Base2" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.883631, 0.79376, 0.30878 )
+
+[node name="Sprite_Detail_Base3" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.706634, 1.38494 )
+
+[node name="Sprite_Detail_Base4" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985476, 0.776648, 1.2574 )
+
+[node name="Sprite_Detail_Base5" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.959428, 0.724392, -1.00409 )
+
+[node name="Sprite_Detail_Base6" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.29777, 0.69955, 1.33707 )
+
+[node name="Sprite_Detail_Base7" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33652, 0.793944, 0.634178 )
+
+[node name="Sprite_Detail_Base8" parent="Planter/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50649, 0.721961, 0.455824 )
+
+[node name="Tree" type="Spatial" parent="Planter"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.413639, 0, 0.585761 )
+visible = false
+
+[node name="Tree" parent="Planter/Tree" instance=ExtResource( 4 )]
+
+[node name="CollisionShape" parent="Planter/Tree/Tree/Mesh/StaticBody" index="0"]
+disabled = true
+
+[node name="CollisionShape2" parent="Planter/Tree/Tree/Mesh/StaticBody" index="1"]
+disabled = true
+
+[node name="Planter2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23117, -0.646749, 2.89909 )
+
+[node name="Flowers" type="Spatial" parent="Planter2"]
+visible = false
+
+[node name="Sprite_Detail_Base9" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.252343, 0.910542, -0.0693164 )
+
+[node name="Sprite_Detail_Base10" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.537928, 0.767947, 0.30878 )
+
+[node name="Sprite_Detail_Base11" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0390759, 0.680822, 0.875004 )
+
+[node name="Sprite_Detail_Base12" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.997126, 0.750836, 1.60284 )
+
+[node name="Sprite_Detail_Base13" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794698, 0.69858, -1.00409 )
+
+[node name="Sprite_Detail_Base14" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.545924, 0.673738, 1.52197 )
+
+[node name="Sprite_Detail_Base15" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.950568, 0.768132, 0.411563 )
+
+[node name="Sprite_Detail_Base16" parent="Planter2/Flowers" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00355, 0.696149, 0.717186 )
+
+[node name="Tree" type="Spatial" parent="Planter2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.448282, -0.025813, 0.877567 )
+visible = false
+
+[node name="Tree" parent="Planter2/Tree" instance=ExtResource( 4 )]
+
+[node name="CollisionShape" parent="Planter2/Tree/Tree/Mesh/StaticBody" index="0"]
+disabled = true
+
+[node name="CollisionShape2" parent="Planter2/Tree/Tree/Mesh/StaticBody" index="1"]
+disabled = true
+
+[editable path="Planter/Tree/Tree"]
+
+[editable path="Planter2/Tree/Tree"]

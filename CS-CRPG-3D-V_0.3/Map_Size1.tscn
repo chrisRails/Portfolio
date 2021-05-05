@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://FixedMap.gd" type="Script" id=1]
+[ext_resource path="res://Cell.tscn" type="PackedScene" id=2]
+
+[node name="Map" type="Spatial"]
+script = ExtResource( 1 )
+size = 1
+
+[node name="Cell1" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -240, 0, -240 )
+
+[node name="Cell2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -240 )
+
+[node name="Cell3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 240, 0, -240 )
+
+[node name="Cell4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -240, 0, 0 )
+
+[node name="Cell5" parent="." instance=ExtResource( 2 )]
+
+[node name="Cell6" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 240, 0, 0 )
+
+[node name="Cell7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -240, 0, 240 )
+
+[node name="Cell8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 240 )
+
+[node name="Cell9" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 240, 0, 240 )
